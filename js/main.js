@@ -20,3 +20,10 @@ const [a, b, c] = array;
 return a+b+c;
 }
 console.log(sumarTres([4, 5, 6, 7]));
+
+//EJERCICIO 5  Desestructuración con Rest para obtener elementos restantes
+function sinPrimero(array) {
+const [primero, ...restante] = array;
+return restante;
+}
+console.log(sinPrimero([1, 2, 3, 4])); 
