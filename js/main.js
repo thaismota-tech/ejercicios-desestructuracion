@@ -8,3 +8,8 @@ function segundoElemento(array) {
   return array[1]; //se pone 1 porque el segundo número del array está en esa orden según el índice
 }
 console.log(segundoElemento([1, 2, 3, 4]));
+
+//EJERCICIO 3  Desestructuración de un objeto con valores por defecto
+const persona = { edad: 25 };
+const { edad, nombre = 'Desconocido' } = persona;
+console.log(nombre); 
