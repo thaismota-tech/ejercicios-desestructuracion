@@ -42,3 +42,10 @@ const {
 } = persona2;
 console.log(nombre2);
 console.log(pais); 
+
+//EJERCICIO 7  Desestructuración de múltiples objetos
+const persona3 = { nombre: "Ana", edad3: 28 };
+const detalles = { profesion: "Ingeniera", pais2: "España" };
+const { nombre, edad3 } = persona3;
+const { profesion, pais2 } = detalles;
+console.log({ nombre, edad, profesion, pais2 });
