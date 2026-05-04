@@ -13,3 +13,10 @@ console.log(segundoElemento([1, 2, 3, 4]));
 const persona = { edad: 25 };
 const { edad, nombre = 'Desconocido' } = persona;
 console.log(nombre); 
+
+//EJERCICIO 4  Sumar elementos de un array desestructurado
+function sumarTres(array) {
+const [a, b, c] = array;
+return a+b+c;
+}
+console.log(sumarTres([4, 5, 6, 7]));
