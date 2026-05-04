@@ -56,3 +56,8 @@ function conectar({ host, port }) {
 }
 const config = { host: "localhost", port: 8080 };
 conectar(config);
+
+//EJERCICIO 9   Desestructurar un array de objetos
+const personas = [{ nombre: "Juan" }, { nombre: "Pedro" }];
+const [, {nombre}] = personas;
+console.log(nombre);
