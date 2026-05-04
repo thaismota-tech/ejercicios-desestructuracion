@@ -44,8 +44,15 @@ console.log(nombre2);
 console.log(pais); 
 
 //EJERCICIO 7  Desestructuración de múltiples objetos
-const persona3 = { nombre: "Ana", edad3: 28 };
+const persona3 = { nombre3: "Ana", edad3: 28 };
 const detalles = { profesion: "Ingeniera", pais2: "España" };
-const { nombre, edad3 } = persona3;
+const { nombre3, edad3 } = persona3;
 const { profesion, pais2 } = detalles;
-console.log({ nombre, edad, profesion, pais2 });
+console.log({ nombre3, edad3, profesion, pais2 });
+
+//EJERCICIO 8  Desestructuración en funciones
+function conectar({ host, port }) {
+  console.log(` Conectando a ${host}, en el puerto ${port}`);
+}
+const config = { host: "localhost", port: 8080 };
+conectar(config);
